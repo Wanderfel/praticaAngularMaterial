@@ -1,0 +1,58 @@
+<main>
+  <div id="tituloDiv">
+    <div id="titulo">
+      <mat-card-header>
+        <mat-card-title class="edtitulo">
+          <p><strong>{{titulo}}</strong></p>
+        </mat-card-title>
+        <mat-card-subtitle>Insira o registro do Cyborg</mat-card-subtitle>
+      </mat-card-header>
+    </div>
+
+    <div id="inputs">
+
+      <div id="inputNome">
+        <mat-form-field appearance="fill" class="mat-form-principal">
+          <mat-label>Codi-Nome</mat-label>
+          <input matInput [(ngModel)]="usuario.codiNome" placeholder="digite o codinome">
+        </mat-form-field>
+      </div>
+
+      <div id="inputCpf">
+        <mat-form-field appearance="fill" class="mat-form-principal">
+          <mat-label>Número de Série</mat-label>
+          <input matInput [(ngModel)]="usuario.serie" placeholder="digite a série">
+        </mat-form-field>
+      </div>
+
+      <div id="inputIdade">
+        <mat-form-field appearance="fill" class="mat-form-principal">
+          <mat-label>Duração do módulo</mat-label>
+          <input matInput [(ngModel)]="usuario.modulo" placeholder="digite o tempo do módulo">
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <div id="insercao">
+      <div id="botao">
+        <button mat-raised-button mat-icon color="primary" (click)="inserirUsuario()"><mat-icon>add</mat-icon>
+        </button>
+      </div>
+
+      <br>
+      <mat-card *ngFor="let usuario of usuarios" class="mat-card-simples">
+        <mat-card-header>
+          <mat-card-title>
+            <mat-icon>person</mat-icon>{{usuario.codiNome}}
+          </mat-card-title>
+          <mat-card-subtitle *ngIf="usuario.serie">Serie: {{usuario.serie}} Módulo: {{usuario.modulo}}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          Cyberpunk 2077
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</main>

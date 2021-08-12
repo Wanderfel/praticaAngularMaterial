@@ -1,0 +1,119 @@
+.mat-form-principal {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 250px;
+  padding: 0.5rem;
+  background: linear-gradient(227deg, #05e4ab, #b20ca4, #025bd7);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 1s ease infinite;
+  -moz-animation: AnimationName 1s ease infinite;
+  animation: AnimationName 1s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.mat-card-simples {
+  max-width: 300px;
+  margin-top: 10px;
+  background: linear-gradient(227deg, #05e4ab, #b20ca4, #025bd7);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 1s ease infinite;
+  -moz-animation: AnimationName 1s ease infinite;
+  animation: AnimationName 1s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#tituloDiv {
+  background-color: #fff;
+  padding: 30px;
+  width: 35%;
+}
+
+#titulo {
+  margin-bottom: 10px;
+}
+
+#inputs {
+  display: flex;
+
+  align-items: center;
+}
+
+#insercao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-top: 25px;
+  align-items: center;
+}
